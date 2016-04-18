@@ -18,7 +18,7 @@
     position: absolute;
     padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 300px; 
     height: 100%;
     top:50%;
@@ -33,8 +33,8 @@
     border-width: 5px;
     border-color: whitesmoke;
     border-style: outset;
-    background-color: #F0FFDB;
-    opacity: 
+    background-color: #1cd076;
+    text-align:center; 
 }
 
 .formElement{
@@ -46,27 +46,32 @@
 }
 
 input[type=text]{
-    width: 96%;
+    width: 100%;
+    max-width: 320px;
     height: 20px;
     font-size: 16px;
     padding: 10px;
     border: 1px solid #A3ACB8;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08) inset;
+   
 }
 
 input[type=password]{
-    width: 96%;
+    width: 100%;
+    max-width: 320px;
     height: 20px;
     font-size: 16px;
     padding: 10px;
     border: 1px solid #A3ACB8;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08) inset;
+    margin: 30px 0;
 }
 
 h1{
     text-align: center;
+    color: #FFFFFF;
 }
 
 .loginBttns{
