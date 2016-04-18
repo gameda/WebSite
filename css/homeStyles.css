@@ -3,18 +3,22 @@
     font-size: 13px;
     font-family: Verdana, sans-serif;
     color: #57566B;
-    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     display: block;
-    background-image: url("../img/login.png");
+    background: #292E2F;
+}
+.logo{
+    text-align: center;
 }
 
-.login{
+#logo{
+    max-width: 500px;
+    width: 100%;
  
 }
 
-.login_form{
+.login_for{
     position: absolute;
     padding: 20px;
     width: 100%;
@@ -30,9 +34,10 @@
     justify-content: center;
     align-items: center;
     float: left;
-    border-width: 5px;
+    border-width: 2px;
     border-color: whitesmoke;
-    border-style: outset;
+    border-style: dotted;
+    border-radius: 5px;
     background-color: #1cd076;
     text-align:center; 
 }
@@ -42,7 +47,26 @@
     padding: 5px;
     width: 98%;
     float: left;
+    text-align: center;
+}
 
+.login_form{
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+fieldset{
+
+    position: absolute; 
+    border: 2px solid #32317F; 
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background-color: white;
 }
 
 input[type=text]{
@@ -78,24 +102,26 @@ h1{
     float: left;
     text-align: center;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
 
 }
 
 #loginL{
     text-align: center;
     width: 100%;
-    max-width: 125px; 
+    max-width: 250px; 
     background-color: #1C8ED0;
     border-radius: 4px;
+    margin: 10px;
 }
 
 #registerL{
     text-align: center;
     width: 100%;
-    max-width: 125px; 
+    max-width: 250px; 
     background-color: #DE7C28;
     border-radius: 4px;
+    margin: 10px;
 }
 
 input[type=button]:hover{
@@ -112,7 +138,6 @@ input[type=button]{
     padding: 10px 20px;
     font-size: 1.3em;
     color: white;
-    margin: 0 0 0 20px;
     border: 0;
     outline:0px;
 } 
