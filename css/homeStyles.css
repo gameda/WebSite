@@ -1,7 +1,7 @@
  
  body{
     font-size: 13px;
-    font-family: Verdana, sans-serif;
+    font-family: 'DIN Next Rounded LT Pro', Verdana, sans-serif;;
     color: #57566B;
     margin: 0;
     padding: 0;
@@ -15,7 +15,10 @@
 #logo{
     max-width: 500px;
     width: 100%;
- 
+}
+.logo2{
+    max-width: 500px;
+    width: 100%;
 }
 
 .login_for{
@@ -150,6 +153,222 @@ input[type=button]{
     outline:0px;
 } 
 
+#mainContainer{
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+.pageHeader, #theJammerFooter{
+    padding: 20px;
+    background-color: #292E2F;
+    color: white;
+    float: left;
+    width: 100%;
+}
+
+.pageHeader{
+    font-size: 2em;   
+}
+
+.menu_header{
+    float: right;
+    padding: 0px;
+    font-size: 14px;
+    margin: 0px 20px 10px 0;
+
+
+    
+}
+.menu_header li{
+    display: inline;
+}
+
+.imgPro {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 0 9px -9px;
+}
+
+#tabselector ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #1CCED0;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#tabselector ul li a{
+    float: left;
+    padding: 18px 45px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#tabselector ul li.selected a, #tabselector ul li a:hover{
+    background-color: #FFFFFA; 
+    color: #4D4C54;
+}
+
+
+#tabselector ul li:hover{
+    cursor: pointer;   
+}
+
+#tabcontent {
+    width: 100%;
+    background-color: #FFFFFA;
+}
+
+#tabcontent > div{
+    display: none;
+    padding: 5px;
+}
+
+#tabcontent > div.active{
+    display: block; 
+
+}
+
+#tabselector{
+    border: 1px solid #32317F;
+    float: left;
+    width: 100%;
+}
+
+.box{
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    float: right;
+}
+
+.container-1 input#search{
+    width: 100%;
+    max-width: 300px; 
+    height: 35px;
+    background: #C2F2EE;
+    border: none;
+    font-size: 10pt;
+    float: right;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    outline:0px;
+
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+
+.container-1 .icon{
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 14px;
+    z-index: 1;
+    color: #4f5b66;
+    font-size: 20px;
+}
+
+  .container-1:hover .icon{
+  margin-top: 16px;
+  color: #93a2ad;
+ 
+  -webkit-transform:scale(.5); /* Safari and Chrome */
+  -moz-transform:scale(1.5); /* Firefox */
+  -ms-transform:scale(1.5); /* IE 9 */
+  -o-transform:scale(1.5); /* Opera */
+   transform:scale(1.5);
+  }
+
+
+.container-4{
+  overflow: hidden;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.container-4 input#search{
+    width: 100%;
+    height: 30px;
+    margin: 4px 0;
+    background: #FFFFFA;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 5px;
+    padding-right: 53px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline:0px;
+
+
+}
+.container-4 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: none;
+  background: #FFFFFF;
+  height: 30px;
+  width: 50px;
+  margin: 4px;
+  color: #4f5b66;
+  opacity: 0;
+  font-size: 10pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+
+  }
+ 
+.container-4:hover button.icon:hover{
+    background: #AEC84D;
+}
+
+.menu_header a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu_header a:hover {
+    text-decoration: underline;
+}
+
+
 /*
 
 div.padre {
@@ -181,7 +400,7 @@ fieldset legend{
 
 }
 
-#theJammerHeader, #theJammerFooter{
+#pageHeader, #theJammerFooter{
     padding: 20px;
     background-color: #003F77;
     color: white;
@@ -189,7 +408,7 @@ fieldset legend{
     width: 100%;
 }
 
-#theJammerHeader{
+#pageHeader{
     font-size: 2em;   
 }
 
