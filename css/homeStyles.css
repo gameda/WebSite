@@ -177,6 +177,13 @@ input[type=button]{
     display: inline;
 }
 
+.imgPro {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 0 9px -9px;
+}
+
 #tabselector ul{
     list-style: none;
     overflow: hidden;
