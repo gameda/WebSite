@@ -189,13 +189,15 @@ input[type=button]{
 
 
 
-#tabselector ul li{
+#tabselector ul li a{
     float: left;
-    padding: 20px 48px;
-    font-size: 15px;
+    padding: 18px 45px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-#tabselector ul li.selected, #tabselector ul li:hover{
+#tabselector ul li.selected a, #tabselector ul li a:hover{
     background-color: #FFFFFA; 
     color: #4D4C54;
 }
@@ -226,6 +228,13 @@ input[type=button]{
     width: 100%;
 }
 
+.box{
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    float: right;
+}
 
 .container-1 input#search{
     width: 100%;
@@ -332,18 +341,19 @@ input[type=button]{
 
   }
  
-  .container-4:hover button.icon:hover{
+.container-4:hover button.icon:hover{
     background: #AEC84D;
-  }
-
-
-  .box{
-    margin: 10px;
-    width: 100%;
-    max-width: 300px;
-    height: 30px;
-    float: right;
 }
+
+.menu_header a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu_header a:hover {
+    text-decoration: underline;
+}
+
+
 /*
 
 div.padre {
