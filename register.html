@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LAB2</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/homeStyles.css"/>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div  class="logo">
+        <img src="img/logo5.png" id="logo">
+    </div>
+    <div class="register_form">
+        <div class="formElement">
+            <input id= "firstName"  type="text" placeholder="First Name"  />
+        </div>
+        <div class="formElement">
+        <input id= "lastName"  type="text" placeholder="Last Name"  />
+        </div>
+        <div class="formElement">Gender
+            <input id= "gender1"  type="radio" name= "gender" value= "Male"/>Male <br>
+            <input id= "gender2"  type="radio" name= "gender" value= "Female"/>Female<br>    
+        </div>
+        <div  class="formElement">
+            <input id="username"  type="text" placeholder="Username" />
+        </div>
+        <div class="formElement">
+            <input id= "password"  type="password" placeholder="Password"  />
+        </div>
+        <div class="formElement">
+            <input id= "passwordConf"  type="password" placeholder="Password Confirmation"  />
+        </div>
+        <div class="formElement">
+			<p>Country</p>
+			<select id= "country">
+				<option value="0"> Select a country.. </option>
+				<option value="1"> Mexico </option>
+				<option value="2"> France </option>
+				<option value="3"> USA </option>
+				<option value="4"> Canada </option>
+				<option value="5"> Argentina </option>
+				<option value="6"> Spain </option>
+				<option value="7"> Germany </option>
+				<option value="8"> China </option>
+				<option value="9"> Japan </option>
+				<option value="10"> Australia </option>
+				<option value="11"> Chile </option>
+				<option value="12"> Afganistan </option>
+				<option value="13"> Russia </option>
+				<option value="14"> South Africa </option>
+				<option value="15"> Venezuela </option>
+			</select>
+        </div>
+        <div class="formElement">
+            <input id= "age"  type="number" min= "15" max= "99" placeholder="Age"  />
+        </div>
+        <div class="formElement">
+            <input id= "weight"  type="number" min= "40" max= "200" placeholder="Weight"  />
+        </div>
+        <div class="formElement">
+            <input id= "hieght"  type="number" min= "100" max="250" placeholder="height"  />
+        </div>
+        <div class="formElement">
+            <p>Activity</p>
+            <select id="#activity">
+            <option value = "0"> Select a Physical Activity</option>
+            <option value = "1">Jogging</option>
+            <option value = "2">Basketball</option>
+            <option value = "3">Swimming</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <p>Goal</p>
+            <select id="#activity">
+            <option value = "0"> Select your Goal</option>
+            <option value = "1">Keep weight</option>
+            <option value = "2">Gain weight</option>
+            <option value = "3">Lose weight </option>
+            </select>
+        </div>
+        <div class="loginBttns">
+            <input type="button"  id="registerL" value="Register"/>
+            <input type="button" id="cancel" value = "Cancel"/>
+        </div>
+    </div>
+    </body>
+</html>

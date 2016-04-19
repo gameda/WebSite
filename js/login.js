@@ -1,6 +1,10 @@
 $(document).ready(function(){
-
-    $("#register_button").click(function(){
+    
+    $("#registerL").click(function(e){
+        e.preventDefault;
+        location.replace("/register.html");
+    });
+    /*$("#register_button").click(function(){
 
         var a=false; 
         var b=false;
@@ -86,7 +90,6 @@ $(document).ready(function(){
 
         if( a && b && c && d && e && f && g && h){
 
-            /* Data to send to registerService*/
              var dataToRegister = {
                 firstname : $("#name input[type=text]").val(),
                 lastname : $("#lastname input[type=text]").val(),
@@ -191,5 +194,5 @@ $(document).ready(function(){
 
 
    
-
+*/
 });
