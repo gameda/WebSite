@@ -2,7 +2,6 @@
 	header('Accept: application/json');
 	header('Content-type: application/json');
 	require_once __DIR__ . '/dataLayer.php';
-
 	$action = $_POST["action"];
 	
 
@@ -69,24 +68,36 @@
 
 	function verifyRegistration(){
 
+        echo("debug");
 		$userFirstName = $_POST["firstname"];
 		$userLastName = $_POST["lastname"];
+        $userName = $_POST["username"]
 		$userPassword = $_POST["password"];
 		$userEmail = $_POST["email"];
 		$userCountry = $_POST["country"];
 		$userGender = $_POST["gender"];
+        $userAge = $_POST["age"];
+        $userWeight = $_POST["weight"];
+        $userHeight = $_POST["height"];
+        $userActivity = $_POST["activity"];
+        $userGoal = $_POST["goal"];
 
-		$result = registrationAction($userFirstName, $userLastName, $userPassword, $userEmail, $userCountry, $userGender);
+		$result = registrationAction($userFirstName, $userLastName, $userPassword, $userEmail, $userCountry, $userGender, $userAge, $userWeight, $userHeight, $userActivity, $userGoal);
 
 		if($result){
 
 			session_start();
-			$_SESSION['userName'] = $userFirstName;
-			$_SESSION["fName"] = $userLastName;
-			$_SESSION["lName"] = $userName;
+			$_SESSION['username'] = $userName;
+			$_SESSION["fName"] = $userFirstName;
+			$_SESSION["lName"] = $userLastName;
 			$_SESSION["email"] = $userEmail;
-			$_SESSION["gender"] = $userGender;
 			$_SESSION["country"] = $userCountry;
+			$_SESSION["gender"] = $userGender;
+            $_SESSION["age"] = $userAge;
+            $_SESSION["weight"] = $userWeight;
+            $_SESSION["height"] = $userHeight;
+            $_SESSION["activity"] = $userActivity;
+            $_SESSION["goal"] = $userGoal;
 			
 			echo json_encode("New record created successfully");
 

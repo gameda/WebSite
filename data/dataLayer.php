@@ -4,7 +4,7 @@
 		$servername = "localhost";
 		$username = "root";
 		$password = "root";
-		$dbname = "TheJammer_DB";
+		$dbname = "healthnfood";
 
 
 		$connection = new mysqli($servername, $username, $password, $dbname);
@@ -46,16 +46,16 @@
 
 	}
 
-	function registrationAction($userFirstName, $userLastName, $userName, $userPassword, $userEmail, $userCountry, $userGender){
+	function registrationAction($userFirstName, $userLastName, $userName, $userPassword, $userEmail, $userCountry, $userGender, $userAge, $userWeight, $userHeight, $userActivity, $userGoal){
 
+        echo("debug");
 		$conn = connect();
-
 		if ($conn != null) {
 
-			$sql =  "INSERT INTO Users (fName, lName, userName, passWord, email, country, gender) VALUES ('$userFirstName', '$userLastName', '$userName, '$userPassword', '$userEmail', '$userCountry', '$userGender')";
+			$sql =  "INSERT INTO users (username, passwrd,fName,lName,email,country,gender,age,weight,height,activity,goal) VALUES ('$userName', '$userPassword', '$userFirstName', '$userLastName', '$userEmail', '$userCountry', '$userGender', '$userAge', '$userWeight', '$userHeight', '$userActivity', '$userGoal')";
 
 		
-			$result = $conn -> query($sql); 
+			$result = $connec -> query($sql); 
 
 			if($result === TRUE) { 
 
